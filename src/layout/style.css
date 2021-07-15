@@ -1,0 +1,125 @@
+:root {
+  --darker: #192f32;
+  --green1: #2e2d5d;
+  --redd: #ffffff;
+}
+
+/* ===================================== 
+    -----------    Grid Layout    -----------
+    ======================================== */
+
+.container {
+  height: 100vh;
+  color: var(--darker);
+  display: grid;
+  font-family: "Poppins", sans-serif;
+  grid-template-columns: 1fr;
+  grid-auto-rows: 80px 1fr 50px;
+  grid-gap: 2px;
+  grid-template-areas:
+    "head"
+    "main"
+    "footer";
+}
+#head {
+  grid-area: head;
+  height: 120px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  box-shadow: 0 2px 5px -1px rgb(50 50 93 / 25%),
+    0 1px 3px -1px rgb(0 0 0 / 30%);
+  background: url(download2.jpg) repeat;
+}
+
+.logo span {
+  color: var(--green1);
+  font-family: "Alfa Slab One", cursive;
+  font-size: 2.5rem;
+  position: fixed;
+  top: 1%;
+  left: 20%;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+#main {
+  grid-area: main;
+}
+#footer {
+  grid-area: footer;
+  box-shadow: 0px -2px 5px -1px rgb(50 50 93 / 25%),
+    0px -1px 3px -1px rgb(0 0 0 / 30%);
+}
+
+.App {
+  text-align: center;
+}
+h2 {
+  color: var(#397981);
+  text-decoration: underline;
+}
+h3 {
+  color: var(--green1);
+  font-family: "Alfa Slab One", cursive;
+  letter-spacing: 2px;
+}
+/* ===================================== 
+    -----------  Input    -----------
+    ======================================== */
+input[type="text"] {
+  width: 50%;
+  padding: 0.4rem 0.6rem;
+
+  margin: 30px 0;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 10vw;
+  background-color: #000000;
+  color: var(--redd);
+}
+input:focus {
+  outline-color: black;
+}
+.search {
+  display: flex;
+  justify-content: center;
+}
+.search-input {
+  max-width: 35%;
+}
+/* ===================================== 
+    -----------  Header    -----------
+    ======================================== */
+
+.fav {
+  border-radius: 50vw;
+  cursor: pointer;
+  color: var(--redd);
+  font-weight: 700;
+  transition: background-color 0.5s;
+  padding: 0.3rem;
+}
+.fav:hover {
+  background-color: #ffeafa;
+}
+/* ===================================== 
+    -----------  content    -----------
+    ======================================== */
+.search-container {
+  margin: 0.5rem 1rem;
+}
+.list-item {
+  display: flex;
+  align-items: center;
+  width: 300px;
+  justify-content: space-between;
+  margin: 1.5rem auto;
+  font-size: 1.5rem;
+}
+.random-drink {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
