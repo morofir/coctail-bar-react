@@ -5,6 +5,7 @@ import Item from "./Item";
 const INITIAL_STATE = {
   term: "",
 };
+let a;
 const Search = () => {
   const [values, setValues] = useState(INITIAL_STATE);
   const [responseData, setresponseData] = useState({});
