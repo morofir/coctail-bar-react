@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import Item from "../search/Item";
 
 const Random = () => {
   const [random, setRandom] = useState(null);
@@ -39,7 +38,6 @@ const Random = () => {
             src={random.drinks[0].strDrinkThumb}
             alt={random.drinks[0].strDrink}
           />
-          {/* <Item key={random.idDrink} item={random} /> */}
         </div>
       )}
     </div>
